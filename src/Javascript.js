@@ -14,7 +14,8 @@ const Javascript = () => {
 	*/
 
 	// Arrays
-	const t = [1, -1, 3]
+	/*
+		const t = [1, -1, 3]
 
 	t.push(5)
 
@@ -41,6 +42,36 @@ const Javascript = () => {
 	const [first, second, ...rest] = t4
 	console.log(first, second); // 1, 2
 	console.log(rest); // 3, 4, 5
+	*/
+
+	// Objetos
+	const object1 = {
+		name: 'Arto Hellas',
+		age: 35,
+		education: 'PhD',
+	}
+	
+	const object2 = {
+		name: 'Full Stack web application development',
+		level: 'intermediate studies',
+		size: 5,
+	}
+	
+	const object3 = {
+		name: {
+			first: 'Dan',
+			last: 'Abramov',
+		},
+		grades: [2, 3, 5, 3],
+		department: 'Stanford University',
+	}
+
+	console.log(object1.name) // Arto Hellas
+	const fieldName = 'age' 
+	console.log(object1[fieldName]) // 35
+
+	object1.address = 'Helsinki'
+	object1['secret number'] = 12341
 };
 
 export default Javascript;
