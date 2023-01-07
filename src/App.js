@@ -2,6 +2,10 @@ import './App.css';
 import { useState } from 'react';
 
 
+const Counter = ({number}) => {
+	return <h1>{number}</h1>
+};
+
 const App = (props) => {
   const [counter, setCounter] = useState(0)
 
@@ -18,7 +22,7 @@ const App = (props) => {
   return (
     <div>
 			<p>El valor del contador es:</p>
-      <h1>{counter}</h1>
+      <Counter number={counter} />
 			<p>{isEven ? 'Es par' : 'Es impar'}</p>
 			<button onClick={handleClick}>
 				Incrementar
