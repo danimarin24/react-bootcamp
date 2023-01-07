@@ -45,7 +45,8 @@ const Javascript = () => {
 	*/
 
 	// Objetos
-	const object1 = {
+	/*
+		const object1 = {
 		name: 'Arto Hellas',
 		age: 35,
 		education: 'PhD',
@@ -72,6 +73,48 @@ const Javascript = () => {
 
 	object1.address = 'Helsinki'
 	object1['secret number'] = 12341
+	*/
+
+	// Funciones
+	const sum = (p1, p2) => { 
+		console.log (p1) 
+		console.log (p2) 
+		return p1 + p2 
+	}
+
+	const result = sum(1, 5)
+	console.log (result) // 6
+
+
+	const square = p => {
+		console.log(p)
+		return p * p
+	}
+	// const square = p => p * p
+
+	const result1 = square(2)
+	console.log (result1) // 4
+
+
+	const t = [1, 2, 3]
+	const tSquared = t.map(p => p * p)
+	console.log (tSquared) // [1, 4, 9]
+
+
+	function product(a, b) {
+		return a * b
+	}
+	
+	const result2 = product(2, 6)
+	console.log (result2) // 12
+
+
+	const average = function(a, b) {
+		return (a + b) / 2
+	}
+	
+	const result3 = average(2, 5)
+	console.log(result3); // 3.5
 };
 
 export default Javascript;
