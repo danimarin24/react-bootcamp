@@ -20,7 +20,10 @@ const App = (props) => {
 	const isEven = counter % 2 === 0
 
   return (
-    <div>
+    <div className='main'>
+			<h1 className="text-3xl font-bold underline">
+				Hello world!
+			</h1>
 			<p>El valor del contador es:</p>
       <Counter number={counter} />
 			<p>{isEven ? 'Es par' : 'Es impar'}</p>
